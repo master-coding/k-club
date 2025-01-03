@@ -4,6 +4,23 @@ import { X } from "lucide-react";
 import styles from "./ApplyForm.module.css";
 
 const ApplyForm = ({ closeModal }) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+      alert("Form submitted successfully!");
+      closeModal();
+    } catch (error) {
+      alert("Error submitting form");
+    }
+  };
+
   return (
     <motion.div
       className={styles.modalOverlay}
@@ -28,6 +45,8 @@ const ApplyForm = ({ closeModal }) => {
           name="application"
           method="POST"
           data-netlify="true"
+          netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="application" />
 

@@ -14,5 +14,12 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <form name="application" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="radio" name="hireMe" />
+      <textarea name="comment"></textarea>
+    </form>
   </body>
 </html>
