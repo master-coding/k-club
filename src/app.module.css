@@ -1,0 +1,38 @@
+.navbar-container {
+  color: #fff;
+  background-color: #181818;
+  padding: 1rem 4rem;
+}
+
+.homepage-container {
+  background-color: #000;
+  padding: 0 4rem;
+}
+
+.impact-container {
+  background-color: #fbf3ea;
+  padding: 2rem 4rem;
+}
+
+.leadership-container {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 4rem;
+}
+
+.process-container {
+  background-color: #fbf3ea;
+  padding: 2rem 4rem;
+}
+
+.questions-container {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 4rem;
+}
+
+.footer-container {
+  background-color: #222222;
+  color: #f5e1ce;
+  padding: 2rem 4rem;
+}

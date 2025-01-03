@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px; 
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.heading {
+    padding-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.items {
+    font-size: 14px;
+    color: #ABABAB;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.items:hover {
+    color: #fff;
+}
+
+.logo {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid #ABABAB;
+}
+
+.policy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    color: #ABABAB;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.policy div {
+    padding: 8px;
+}
+
+.policy div:hover {
+    color: #fff;
+}
