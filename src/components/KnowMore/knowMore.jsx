@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import cards from "./knowMoreCard";
-import styles from "./KnowMore.module.css";
+import styles from "./knowMore.module.css";
 
 const KnowMore = () => {
   const container = {
