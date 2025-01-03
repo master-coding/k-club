@@ -28,11 +28,7 @@ const ApplyForm = ({ closeModal }) => {
           name="application"
           method="POST"
           data-netlify="true"
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Form submitted successfully!");
-            closeModal();
-          }}
+          netlify
         >
           <input type="hidden" name="form-name" value="application" />
 
