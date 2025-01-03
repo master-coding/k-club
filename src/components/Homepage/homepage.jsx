@@ -34,7 +34,7 @@ export default function Homepage() {
         <h1 className={styles["title"]}>
           Think, Speak and Lead
           <br />
-          with Confidence
+          with Confidence <span style={{ color: "#F5B915" }}>GLOBALLY</span>
         </h1>
         <p className={styles["subtitle"]}>
           Empowering leaders with the skills to positively influence their
