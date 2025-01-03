@@ -43,3 +43,12 @@ p {
 .skillBox:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

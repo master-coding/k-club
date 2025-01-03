@@ -1,53 +1,96 @@
-.application-title {
-  font-size: 2rem;
-  padding: 20px 0;
-  font-weight: 500;
+.container {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fbf3ea;
+  background-color: #fff;
 }
 
-.application-subtitle {
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 10px 0 40px;
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.application-state-container {
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.timeline {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  padding: 10px;
 }
 
-.application-state {
+.step {
+  flex: 1;
+  min-width: 250px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 12px;
-  margin: 12px;
-  color: #aa7b59;
-  border: 2px solid #aa7b59;
-  height: 300px;
-  width: 250px;
-  font-weight: 800;
-  cursor: pointer;
-  background-color: #fff;
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08); /* Shadow */
-  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
 }
 
-.application-state:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+.iconWrapper {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #8b6b4d;
 }
 
-@media screen and (max-width: 650px) {
-  .application-title {
-    font-size: 1.5rem;
+.content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.content h3 {
+  margin-bottom: 0.8rem;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.arrow {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  color: #8b6b4d;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .application-state {
-    height: 160px;
-    width: 160px;
-    font-size: 12px;
+  .step {
+    width: 100%;
+  }
+
+  .arrow {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 1rem 0;
+    transform: rotate(90deg);
   }
 }

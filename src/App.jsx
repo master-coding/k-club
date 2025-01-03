@@ -3,8 +3,9 @@ import Homepage from "./components/Homepage/page";
 import Info from "./components/Info/info";
 import Impact from "./components/Impact/page";
 import LeaderShipProgram from "./components/LeaderShipProgram/page";
-import Process from "./components/Process/page";
+import ApplicationProcess from "./components/Process/page";
 import Questions from "./components/Questions/page";
+import KnowMore from "./components/KnowMore/knowMore";
 import Footer from "./components/Footer/page";
 import styles from "./app.module.css";
 
@@ -23,11 +24,14 @@ export default function App() {
       <div>
         <Info />
       </div>
+      <div className={styles["process-container"]}>
+        <ApplicationProcess />
+      </div>
       <div className={styles["leadership-container"]}>
         <LeaderShipProgram />
       </div>
-      <div className={styles["process-container"]}>
-        <Process />
+      <div>
+        <KnowMore />
       </div>
       <div className={styles["questions-container"]}>
         <Questions />
