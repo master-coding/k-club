@@ -2,9 +2,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "./Navigation/navigation";
 import styles from "./navbar.module.css";
+import ApplyForm from "../ApplyForm/ApplyForm";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,7 +34,11 @@ const Navbar = () => {
       >
         <Navigation />
       </div>
-      <button className={styles["apply-btn"]}>Apply Now</button>
+      <button className={styles["apply-btn"]} onClick={openModal}>
+        Apply Now
+      </button>
+
+      {isModalOpen && <ApplyForm closeModal={closeModal} />}
     </div>
   );
 };
