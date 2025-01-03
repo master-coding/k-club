@@ -1,5 +1,5 @@
 "use client";
-import styles from "./page.module.css";
+import styles from "./leadership.module.css";
 
 export default function LeaderShipProgram() {
   return (

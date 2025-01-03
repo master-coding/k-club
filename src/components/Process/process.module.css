@@ -94,3 +94,9 @@
     transform: rotate(90deg);
   }
 }
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 3rem 0;
+  }
+}

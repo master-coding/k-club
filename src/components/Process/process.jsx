@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Layers, Users, Award, ArrowRight } from "lucide-react";
-import styles from "./page.module.css";
+import styles from "./process.module.css";
 
 const ApplicationProcess = () => {
   const steps = [
@@ -53,13 +53,9 @@ const ApplicationProcess = () => {
               <p>{step.description}</p>
             </div>
             {index < steps.length - 1 && (
-              <motion.div
-                className={styles.arrow}
-                animate={{ x: [0, 10, 0] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-              >
+              <div className={styles.arrow}>
                 <ArrowRight size={24} />
-              </motion.div>
+              </div>
             )}
           </motion.div>
         ))}

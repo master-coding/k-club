@@ -1,5 +1,5 @@
 import achievemnts from "./impactConst";
-import styles from "./page.module.css";
+import styles from "./impact.module.css";
 
 export default function Impact() {
   return (

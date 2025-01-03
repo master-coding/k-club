@@ -1,6 +1,6 @@
 import { useState } from "react";
 import faqItems from "./faqs";
-import styles from "./page.module.css";
+import styles from "./faq.module.css";
 
 export default function Questions() {
   const [activeIndex, setActiveIndex] = useState(null);

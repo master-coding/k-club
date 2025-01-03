@@ -36,3 +36,18 @@
   color: #f5e1ce;
   padding: 2rem 4rem;
 }
+
+@media screen and (max-width: 450px) {
+  .navbar-container {
+    padding: 2rem 1rem;
+  }
+  .homepage-container {
+    padding: 2rem 1rem;
+  }
+  .process-container {
+    padding: 2rem 1rem;
+  }
+  .leadership-container {
+    padding: 2rem;
+  }
+}

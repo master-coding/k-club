@@ -1,12 +1,12 @@
-import Navbar from "./components/Navbar/page";
-import Homepage from "./components/Homepage/page";
+import Navbar from "./components/Navbar/navbar";
+import Homepage from "./components/Homepage/homepage";
+import Impact from "./components/Impact/impact";
 import Info from "./components/Info/info";
-import Impact from "./components/Impact/page";
-import LeaderShipProgram from "./components/LeaderShipProgram/page";
-import ApplicationProcess from "./components/Process/page";
-import Questions from "./components/Questions/page";
+import ApplicationProcess from "./components/Process/process";
+import LeaderShipProgram from "./components/LeaderShipProgram/leadershipProgram";
 import KnowMore from "./components/KnowMore/knowMore";
-import Footer from "./components/Footer/page";
+import Questions from "./components/Questions/faq";
+import Footer from "./components/Footer/footer.jsx";
 import styles from "./app.module.css";
 
 export default function App() {
