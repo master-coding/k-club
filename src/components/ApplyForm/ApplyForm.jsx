@@ -28,7 +28,6 @@ const ApplyForm = ({ closeModal }) => {
           name="application"
           method="POST"
           data-netlify="true"
-          netlify
         >
           <input type="hidden" name="form-name" value="application" />
 
