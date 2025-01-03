@@ -34,6 +34,10 @@
   padding: 8px 16px;
 }
 
+.apply-btn:hover {
+  cursor: pointer;
+}
+
 .hamburger-btn {
   display: none;
   background: none;
