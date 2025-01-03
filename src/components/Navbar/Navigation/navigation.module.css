@@ -11,6 +11,11 @@
   padding: 8px 0;
 }
 
+.fallback {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media (max-width: 1000px) {
   .navigation-list ul {
     display: flex;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "./Navigation/navigation";
 import styles from "./navbar.module.css";
 
@@ -11,7 +12,12 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>Kapable</div>
+      <Link to="/">
+        <div className={styles.logo}>
+          Kapable<span> global</span>
+        </div>
+      </Link>
+
       <button className={styles["hamburger-btn"]} onClick={toggleMenu}>
         ☰
       </button>

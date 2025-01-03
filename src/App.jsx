@@ -1,44 +1,14 @@
-import Navbar from "./components/Navbar/navbar";
-import Homepage from "./components/Homepage/homepage";
-import Impact from "./components/Impact/impact";
-import Info from "./components/Info/info";
-import ApplicationProcess from "./components/Process/process";
-import LeaderShipProgram from "./components/LeaderShipProgram/leadershipProgram";
-import KnowMore from "./components/KnowMore/knowMore";
-import Questions from "./components/Questions/faq";
-import Footer from "./components/Footer/footer.jsx";
-import styles from "./app.module.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import PermissionDenied from "./components/PermissionDenied/permissionDenied.jsx";
+import Kapable from "./Kapable.jsx";
 
 export default function App() {
   return (
-    <div>
-      <div className={styles["navbar-container"]}>
-        <Navbar />
-      </div>
-      <div className={styles["homepage-container"]}>
-        <Homepage />
-      </div>
-      <div className={styles["impact-container"]}>
-        <Impact />
-      </div>
-      <div>
-        <Info />
-      </div>
-      <div className={styles["process-container"]}>
-        <ApplicationProcess />
-      </div>
-      <div className={styles["leadership-container"]}>
-        <LeaderShipProgram />
-      </div>
-      <div>
-        <KnowMore />
-      </div>
-      <div className={styles["questions-container"]}>
-        <Questions />
-      </div>
-      <div className={styles["footer-container"]}>
-        <Footer />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Kapable />} />
+        <Route path="/permission-denied" element={<PermissionDenied />} />
+      </Routes>
+    </Router>
   );
 }

@@ -17,7 +17,9 @@ export default function Footer() {
         ))}
       </div>
       <div>
-        <div className={styles.logo}>Kapable</div>
+        <div className={styles.logo}>
+          Kapable<span> global</span>
+        </div>
         <div className={styles.policy}>
           <div>Privacy Policy</div>
           <div>Terms & Conditions</div>
